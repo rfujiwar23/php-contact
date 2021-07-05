@@ -1,0 +1,109 @@
+
+
+.contact-nav {
+  background: #9DE7D7;
+}
+.contact-nav a {
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 80px;
+}
+.contact .info-box {
+  color: #444444;
+  background: #fff;
+  /*text-align: center;*/
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 5vh 20px 4vh;
+}
+.contact .info-box i {
+  font-size: 32px;
+  color: #67b0d1;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #f0f7fa;
+}
+.contact .info-box h2 {
+  font-size: 1.5em;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.contact .info-box h2 span {
+  padding: 5px 0px;
+  margin: 20px 0px;
+  border-bottom: 5px solid transparent;
+  border-image: linear-gradient(to right, #25607a 0%, #9DE7D7 100%);
+  border-image-slice: 1;
+}
+.contact .info-box p {
+  line-height: 24px;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.contact .info-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3vh;
+}
+.contact .info-box ul li {
+  font-size: 0.9em;
+  line-height: 2em;
+}
+.contact .contact-us form p {
+  font-weight: bold;
+  margin: 1vh 0;
+  padding: 5px 0 5px 10px;
+}
+
+.contact .contact-us form h6 {
+  font-weight: bold;
+  margin: 1vh 0;
+  font-size: 0.9em;
+  color: red;
+}
+
+.contact .contact-us form h6 span {
+  position: relative;
+  top: -4px;
+  font-size: 0.8em;
+  padding-right: 3px;
+  margin-left: 5px;
+}
+.contact .contact-us form input, .contact .contact-us form textarea {
+  width: 100%;
+}
+
+.contact .contact-us form label {
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+
+.contact .contact-us form label span {
+  /*color: white;*/
+  color: red;
+  padding: 2px 3px;
+  margin-left: 3px;
+  font-weight: normal;
+  font-size: 0.8em;
+  position: relative;
+  top: -6px;
+}
+
+.contact .contact-us form .btn {
+  width: 48%;
+}
+.contact .contact-us form .btn-primary {
+  margin-right: 1%;
+}
+.contact .contact-us form .btn-secondary {
+  margin-left: 1%;
+}
+

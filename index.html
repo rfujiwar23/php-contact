@@ -1,22 +1,252 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>株式会社インベード | INVADE Co., Ltd.</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/5c2738e24d.js"></script>
+  <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+  <link rel="manifest" href="image/favicon/site.webmanifest">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $(".scroll-down").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 700, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+
+
+  <script>
+     $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+  </script>
+
 </head>
-
 <body>
-  <a href="input.php">Click</a>
-  <script src="js/scripts.js"></script>
+  <!-- ======= Header ======= -->
+  <!-- <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>INVADE</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#business">Business</a></li>
+          <li><a href="#portfolio">News</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header> -->
+
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+
+                  <a href="index.html"><img src="image/invade-logo.svg"></a>
+                  <!-- <object type="image/svg+xml" data="image/logo.svg" width="242" height="51"></object> -->
+                  <!-- -->
+
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about/index.html">About</a></li>
+                     <!-- <li><a href="pages/business/index.html">Business</a></li> -->
+                     <li><a href="project/index.html">Project</a></li>
+                     <li class="contact-nav"><a href="contact/input.php">Contact</a></li>
+                  </ul>
+               </div>
+            </nav>
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1><img src="image/invade-logo-white.svg" style="width:200px"></h1>
+      <a href="#business" class="btn-get-started scrollto scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+
+    <!-- ======= business Section ======= -->
+    <section id="business" class="business">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>PROJECT</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 icon-boxes">
+            <a href="project/kamisma-beauty/index.html"><img src="image/001-kamisma-beauty-logo.png" alt="KAMISMA BEAUTY" class="img-fluid"></a>
+            <div class="icon-box" data-aos="fade-up">
+              <h4 class="title">KAMISMA BEAUTY</h4>
+              <h5>KAMISMA予約システム<br>&nbsp;</h5>
+              <!-- <p>日本の美容室は24万軒以上、美容師は52万人いるといわれています。世界でも最高峰の技術力を誇る日本の美容師たち。この日本が誇る美容文化と技術の粋を世界に発信していくことによって、美容師たちの技術錬成を促進し、単なる産業ではない誇るべき「日本文化」へと昇華させていきます。</p> -->
+              <p>KAMISMA BEAUTY(カミスマ ビューティー)は、予約が取れないカミカリスマ美容師の予約ができるサービスです。<br>
+                フランスには「食」のミシュランがありますが、日本には…
+                </p>
+                <a href="project/kamisma-beauty/index.html">詳細を見る</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 icon-boxes">
+            <a href="project/nile/index.html"><img src="image/002-nile-logo.png" alt="NILE" class="img-fluid"></a>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <!-- <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
+              <h4 class="title">NILE</h4>
+              <h5>全世界対応のB2Bマッチングサービス<br>（国際オンライン展示会システム）</h5>
+              <!-- <p>日本の美容室は24万軒以上、美容師は52万人いるといわれています。世界でも最高峰の技術力を誇る日本の美容師たち。この日本が誇る美容文化と技術の粋を世界に発信していくことによって、美容師たちの技術錬成を促進し、単なる産業ではない誇るべき「日本文化」へと昇華させていきます。</p> -->
+                <p>これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。しかし、SNSの普及、5Gの登場により、情報化社会が急加速する時代、ビジネスの在り方が変わり…
+                  </p>
+                  <a href="project/nile/index.html">詳細を見る</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 icon-boxes">
+            <a href="project/new/index.html"><img src="image/003-kamismax.png" alt="Kami Charisma" class="img-fluid"></a>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <!-- <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> -->
+              <!-- <h4 class="title">KAMISMAX</h4> -->
+              <h4>&nbsp;</h4>
+              <h5>&nbsp;<br>&nbsp;</h5>
+              <!-- <h5>動画教育コンテンツ<br>&nbsp;</h5> -->
+              <!-- <p>日本の美容室は24万軒以上、美容師は52万人いるといわれています。世界でも最高峰の技術力を誇る日本の美容師たち。この日本が誇る美容文化と技術の粋を世界に発信していくことによって、美容師たちの技術錬成を促進し、単なる産業ではない誇るべき「日本文化」へと昇華させていきます。</p> -->
+                <p>ヘアサロン業界に一石を投じる、全く新しい仕掛けを2021年内にリリース予定。<br>
+                  これからのスタンダードになる新しいカタチの動画コンテンツを発信いたします。
+                  乞うご期待ください。
+                  </p>
+                  <a href="project/new/index.html">詳細を見る</a>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
+            <!-- <h4>ウェブサイト内</h4> -->
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about/index.html">ABOUT</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">BUSINESS</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="pages/news/">NEWS</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="contact/input.php">CONTACT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
+            <h4>サービス</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.kamisma.com/" target="_blank">KAMISMA BEAUTY<i class="fas fa-external-link-alt"></i></a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://nile.inc" target="_blank">NILE <i class="fas fa-external-link-alt"></i></a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">KAMISMAX <i class="fas fa-external-link-alt"></i></a></li> -->
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
+            <h4>インベード株式会社</h4>
+            <p><i class="fas fa-tenge"></i>104-0061 東京都中央区銀座6-10-1 GINZA SIX<br>TEL: 03-5962-8585
+            <br> email: <a href="mailto:info@invade.co.jp">info@invade.co.jp</a></p>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>INVADE Co. Ltd</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+
 </body>
+
 </html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/5c2738e24d.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../../image/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../image/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../image/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../image/favicon/site.webmanifest">
+  <title>株式会社インベード | INVADE Co., Ltd.</title>
+  <script>
+     $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+  </script>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                <a href="../../index.html"><img src="../../../image/invade-logo.svg"></a>
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="../index.html">Home</a></li>
+                     <li><a href="index.html">About</a></li>
+                     <!-- <li><a href="../business/index.html">Business</a></li> -->
+                     <li><a href="../project/index.html">Project</a></li>
+                     <li class="contact-nav"><a href="../contact/input.php">Contact</a></li>
+                  </ul>
+               </div>
+            </nav>
+
+  <!-- ======= title Section ======= -->
+  <section id="title">
+    <div class="title-container" data-aos="fade-up" style="padding-top:80px;">
+      <h1>会社概要</h1>
+      <!-- <a href="#business" class="btn-get-started scrollto"><i class="fas fa-chevron-down"></i></a> -->
+    </div>
+  </section><!-- End title -->
+  
+  <div class="path-strip">
+    <div class="container">
+      <p class="path"><a href="../../index.html">Top</a> &gt; ABOUT</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+
+    <!-- ======= About Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+        
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>会社概要</h2>
+        </div>
+        
+        <div class="about-child-section col-lg-12 col-md-12 col-sm-12 my-5 px-3 py-4">
+          <h3>コンセプト <span>C<em>oncept</em></span></h3>
+          <p>新しいビジネスモデルの構築により、日本の美容を世界のスタンダードへ。</p>
+        </div>
+
+        <div class="about-child-section col-lg-12 col-md-12 col-sm-12 my-5 px-3 py-4">
+          <h3>代表挨拶 <span>M<em>essage</em></span></h3>
+          <p>IT・情報・教育・商品・技術 etc<br>
+          日本が持つ最高レベルのノウハウを駆使し、<br>
+          美容業界を席巻（INVADE）します。</p>
+          <p>私たちに関わるすべての人々ともっと楽しく魅力的な業界へとリードしていきます。</p>
+        </div>
+
+        <div class="about-table">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">会社名</th>
+                <td>インベード株式会社</td>
+              </tr>
+              <tr>
+                <th scope="row">英文社名</th>
+                <td>INVADE Co., Ltd.</td>
+              </tr>
+              <tr>
+                <th scope="row">本社所在地</th>
+                <td>〒104-0061<br>
+                  東京中央区銀座6-10-1 GINZA SIX<br>
+                  Tel : 03-5962-8585（代表）
+                  </td>
+              </tr>
+              <tr>
+                <th scope="row">代表者</th>
+                <td>冬廣　應尚（FUYUHIRO Masanao）</td>
+              </tr>
+              <tr>
+                <th scope="row">事業内容</th>
+                <td class="left">
+                  インターネット、携帯電話網、その他通信システムを利用したデジタルコンテンツの企画、デザイン、制作、運営及び販売業務<br>
+                  ウェブコンテンツに関する企画、デザイン、制作、運営業務<br>
+                  情報システムの研究および開発<br>
+                  各種イベントの企画、制作等
+
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">開発実績：</th>
+                <td>
+                  <!-- 2021年6月　<br> -->
+
+                  <dl>
+                    <dt>2021年6月</dt>
+                    <dd>KAMISMA BEAUTY<br><em>（カミカリスマ美容師予約サービス）</em></dd>
+                    <dt>2021年7月</dt>
+                    <dd>NILE<br><em>（全世界対応B2Bマッチングプラットフォーム）</em></dd>
+                  </dl>
+                  <!-- <table class="inner borderles">
+                    <tr>
+                      <th class="p-0">2021年6月</th>
+                      <td class="p-0">KAMISMA BEAUTY（カミカリスマ美容師予約サービス）</td>
+                    </tr>
+                    <tr>
+                      <th class="p-0">2021年7月</th>
+                      <td class="p-0">NILE（全世界対応B2Bマッチングプラットフォーム）</td>
+                    </tr>
+                  </table> -->
+            </td>
+              </tr>
+              <tr>
+                <th scope="row">資本金</th>
+                <td>1,000万円</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
+        
+
+        
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
+            <!-- <h4>ウェブサイト内</h4> -->
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">ABOUT</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">BUSINESS</a></li> -->
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">NEWS</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="../contact/input.php">CONTACT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
+            <h4>サービス</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.kamisma.com/" target="_blank">KAMISMA BEAUTY</a> <i class="fas fa-external-link-alt"></i></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">KAMISMAX</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="https://nile.inc/" target="_blank">NILE</a> <i class="fas fa-external-link-alt"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
+            <h4>インベード株式会社</h4>
+            <p><i class="fas fa-tenge"></i>104-0061 東京都中央区銀座6-10-1 GINZA SIX<br>
+              TEL: 03-65962-8585 <br> email: <a href="mailto:info@invade.co.jp">info@invade.co.jp</a></p>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Invade Co. Ltd</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+</body>
+
+</html>
